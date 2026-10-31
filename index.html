@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="PT Mensana Aneka Satwa - produsen dan distributor kesehatan hewan sejak 1986">
+<title>PT Mensana Aneka Satwa</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<style>
+:root {
+  --krem: #fff8ec;
+  --hijau: #1f5c3a;
+  --hijau2: #2e8b57;
+  --tua: #143d27;
+  --oranye: #ff8a3d;
+  --kuning: #ffd166;
+  --tinta: #1b2a22;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--tinta);
+  background: var(--krem);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .serif {
+  font-family: 'Fraunces', serif;
+}
+
+.sub {
+  display: inline-block;
+  background: var(--kuning);
+  color: var(--tua);
+  font-weight: 800;
+  font-size: .75rem;
+  letter-spacing: .15rem;
+  text-transform: uppercase;
+  padding: .35rem .9rem;
+  border-radius: 2rem;
+  margin-bottom: .8rem;
+}
+
+.judul {
+  font-size: clamp(1.9rem, 4.5vw, 3rem);
+  font-weight: 800;
+  color: var(--tua);
+  line-height: 1.15;
+}
+
+.judul em {
+  font-style: normal;
+  color: var(--oranye);
+}
+
+.rv {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: all .7s ease;
+}
+
+.rv.on {
+  opacity: 1;
+  transform: none;
+}
+
+/* NAVIGASI */
+.navbar {
+  transition: .3s;
+  padding: 1rem 0;
+}
+
+.navbar.solid {
+  background: rgba(20, 61, 39, .97);
+  padding: .5rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .2);
+}
+
+.navbar-brand {
+  font-family: 'Fraunces', serif;
+  font-weight: 800;
+  color: #fff !important;
+  font-size: 1.3rem;
+}
+
+.navbar-brand span {
+  color: var(--oranye);
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: .9rem;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: .5rem;
+  right: .5rem;
+  bottom: 2px;
+  height: 3px;
+  background: var(--oranye);
+  border-radius: 3px;
+  transform: scaleX(0);
+  transition: .25s;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* BERANDA */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 7rem 0 9rem;
+  background-color: #2e8b57;
+  background-image:
+    linear-gradient(
+      105deg,
+      rgba(14, 45, 28, .88) 0%,
+      rgba(14, 45, 28, .55) 55%,
+      rgba(14, 45, 28, .25) 100%
+    ),
+    url("assets/img/bg-kandang.jpg"),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900' preserveAspectRatio='xMidYMid slice'><defs><linearGradient id='s' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%236fb1e0'/><stop offset='1' stop-color='%23f6e9c8'/></linearGradient></defs><rect width='1600' height='900' fill='url(%23s)'/><circle cx='250' cy='170' r='70' fill='%23fff3b0'/><ellipse cx='600' cy='140' rx='120' ry='28' fill='%23fff' opacity='.7'/><ellipse cx='1250' cy='200' rx='150' ry='32' fill='%23fff' opacity='.6'/><path d='M0 520 Q300 400 600 500 T1200 470 T1600 520 V900 H0Z' fill='%236aa36f'/><path d='M0 620 Q400 540 800 610 T1600 600 V900 H0Z' fill='%234f8a56'/><rect y='700' width='1600' height='200' fill='%233d7346'/><rect x='930' y='430' width='70' height='290' fill='%23cfd3d6'/><ellipse cx='965' cy='430' rx='35' ry='22' fill='%23a9aeb2'/><rect x='1020' y='480' width='380' height='240' fill='%23a8322d'/><polygon points='995,490 1210,340 1425,490' fill='%236e1f1c'/><rect x='1150' y='560' width='120' height='160' fill='%23f3ead2'/><path d='M1150 560 L1270 720 M1270 560 L1150 720' stroke='%23a8322d' stroke-width='10'/><rect x='1185' y='400' width='50' height='40' fill='%23f3ead2'/><g fill='%23fff'><ellipse cx='330' cy='770' rx='85' ry='42'/><rect x='260' y='790' width='14' height='55'/><rect x='390' y='790' width='14' height='55'/><circle cx='420' cy='745' r='26'/><ellipse cx='700' cy='810' rx='75' ry='38'/><rect x='640' y='828' width='12' height='50'/><rect x='745' y='828' width='12' height='50'/><circle cx='770' cy='788' r='23'/></g><g fill='%23333'><ellipse cx='310' cy='760' rx='25' ry='16'/><ellipse cx='360' cy='782' rx='18' ry='12'/><ellipse cx='690' cy='800' rx='22' ry='14'/><circle cx='430' cy='738' r='8'/><circle cx='778' cy='782' r='7'/></g><g fill='%238a6a45'><rect x='0' y='690' width='1600' height='12'/><rect x='0' y='725' width='1600' height='12'/></g></svg>");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: clamp(2.6rem, 8vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1.02;
+}
+
+.hero h1 span {
+  color: var(--kuning);
+  font-style: italic;
+}
+
+.hero p.lead {
+  max-width: 540px;
+  opacity: .92;
+}
+
+.btn-oranye {
+  background: var(--oranye);
+  color: #fff;
+  font-weight: 800;
+  border-radius: 3rem;
+  padding: .9rem 2rem;
+  border: 0;
+  box-shadow: 0 8px 0 #c9631b;
+  transition: .15s;
+}
+
+.btn-oranye:hover {
+  color: #fff;
+  transform: translateY(4px);
+  box-shadow: 0 4px 0 #c9631b;
+}
+
+.btn-garis {
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 800;
+  border-radius: 3rem;
+  padding: .8rem 2rem;
+}
+
+.btn-garis:hover {
+  background: #fff;
+  color: var(--tua);
+}
+
+.gelombang {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  line-height: 0;
+}
+
+.gelombang svg {
+  width: 100%;
+  height: 90px;
+}
+
+.chip {
+  position: absolute;
+  right: 6%;
+  background: #fff;
+  color: var(--tua);
+  border-radius: 1.2rem;
+  padding: .8rem 1.2rem;
+  font-weight: 800;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+  animation: melayang 4s ease-in-out infinite;
+}
+
+.chip small {
+  display: block;
+  font-weight: 500;
+  color: #666;
+}
+
+.chip.a {
+  top: 28%;
+}
+
+.chip.b {
+  top: 52%;
+  right: 14%;
+  animation-delay: 1.5s;
+}
+
+@keyframes melayang {
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+/* TEKS BERJALAN */
+.marquee {
+  background: var(--tua);
+  color: var(--kuning);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: .9rem 0;
+  transform: rotate(-1.2deg);
+  margin: -1.5rem -2%;
+  position: relative;
+  z-index: 3;
+}
+
+.marquee div {
+  display: inline-block;
+  animation: jalan 28s linear infinite;
+  font-family: 'Fraunces', serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.marquee i {
+  color: var(--oranye);
+  margin: 0 1.2rem;
+}
+
+@keyframes jalan {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+section.blok {
+  padding: 6.5rem 0;
+}
+
+/* TENTANG PERUSAHAAN */
+.stat {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(31, 92, 58, .1);
+  height: 100%;
+}
+
+.stat b {
+  display: block;
+  font-family: 'Fraunces', serif;
+  font-size: 2.6rem;
+  color: var(--hijau);
+  line-height: 1;
+}
+
+.stat:nth-child(even) b {
+  color: var(--oranye);
+}
+
+.foto {
+  background: linear-gradient(135deg, #cfe8d5, #f5e3b8);
+  border-radius: 2rem 6rem 2rem 6rem;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7a62;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem;
+  border: 6px solid #fff;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, .15);
+}
+
+.vm {
+  border-radius: 1.8rem;
+  padding: 2rem;
+  height: 100%;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.vm i.bg {
+  position: absolute;
+  right: -10px;
+  bottom: -25px;
+  font-size: 7rem;
+  opacity: .15;
+}
+
+.vm.v {
+  background: linear-gradient(135deg, var(--hijau), var(--hijau2));
+}
+
+.vm.m {
+  background: linear-gradient(135deg, #f0701c, var(--oranye));
+}
+
+.prinsip {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  height: 100%;
+  border-bottom: 6px solid var(--kuning);
+  transition: .25s;
+}
+
+.prinsip:hover {
+  transform: translateY(-8px) rotate(-1deg);
+  border-color: var(--oranye);
+}
+
+.prinsip .ik {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: var(--krem);
+  color: var(--hijau);
+  display: grid;
+  place-items: center;
+  font-size: 1.7rem;
+  margin: 0 auto .8rem;
+}
+
+.prinsip h5 {
+  font-family: 'Fraunces', serif;
+  font-weight: 800;
+}
+
+/* TIMELINE */
+.tl {
+  position: relative;
+  max-width: 920px;
+  margin: 3rem auto 0;
+}
+
+.tl::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  border-left: 4px dashed var(--hijau2);
+  transform: translateX(-50%);
+  opacity: .5;
+}
+
+.tl .it {
+  position: relative;
+  width: 50%;
+  padding: 0 2.8rem 2rem 0;
+  text-align: right;
+}
+
+.tl .it:nth-child(even) {
+  margin-left: 50%;
+  padding: 0 0 2rem 2.8rem;
+  text-align: left;
+}
+
+.tl .it::after {
+  content: "";
+  position: absolute;
+  top: .6rem;
+  right: -11px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--oranye);
+  border: 5px solid var(--krem);
+  box-shadow: 0 0 0 3px var(--oranye);
+}
+
+.tl .it:nth-child(even)::after {
+  right: auto;
+  left: -11px;
+}
+
+.tl .th {
+  font-family: 'Fraunces', serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: var(--hijau);
+}
+
+.tl .isi {
+  background: #fff;
+  border-radius: 1.2rem;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+  font-size: .92rem;
+}
+
+/* STRUKTUR ORGANISASI */
+.bg-gelap {
+  background: var(--hijau);
+  color: #fff;
+  position: relative;
+}
+
+.org {
+  text-align: center;
+}
+
+.org .nd {
+  display: inline-block;
+  background: #fff;
+  color: var(--tua);
+  border-radius: 1.2rem;
+  padding: .9rem 1.4rem;
+  font-weight: 800;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, .18);
+  min-width: 210px;
+}
+
+.org .nd i {
+  display: block;
+  font-size: 1.6rem;
+  color: var(--oranye);
+}
+
+.org .nd.top {
+  background: var(--kuning);
+}
+
+.org .gr {
+  width: 4px;
+  height: 30px;
+  background: var(--kuning);
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.org .baris {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  border-top: 4px solid var(--kuning);
+  margin: 0 4%;
+  padding-top: 0;
+}
+
+.org .baris > div::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 30px;
+  background: var(--kuning);
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+/* KATALOG PRODUK */
+.kat {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  justify-content: center;
+  margin: 2.2rem 0 2.5rem;
+}
+
+.kat button {
+  background: transparent;
+  border: 2px solid var(--hijau2);
+  color: var(--tua);
+  font-weight: 700;
+  font-size: .95rem;
+  padding: .6rem 1.35rem;
+  border-radius: 2rem;
+  transition: all .22s ease;
+}
+
+.kat button:hover {
+  background: #e5f1e8;
+  transform: translateY(-2px);
+}
+
+.kat button.active {
+  background: var(--kuning);
+  border-color: var(--kuning);
+  color: var(--tua);
+  box-shadow: 0 5px 0 rgba(20, 61, 39, .12);
+}
+
+.category-panel {
+  display: none;
+}
+
+.category-panel.active {
+  display: block;
+}
+
+.category-panel .row {
+  margin-top: 0;
+}
+
+@media (max-width: 576px) {
+  .kat {
+    gap: .45rem;
+  }
+
+  .kat button {
+    font-size: .85rem;
+    padding: .5rem .95rem;
+  }
+}
+
+.produk {
+  background: #fff;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .1);
+  transition: .3s;
+  position: relative;
+}
+
+.produk:hover {
+  transform: translateY(-10px) rotate(1deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .18);
+}
+
+.produk .gb {
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* GAMBAR PRODUK: ubah src pada tag img untuk mengganti gambar */
+.produk .gb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+  background: #fff;
+}
+
+.produk .no {
+  position: absolute;
+  top: .8rem;
+  left: 1rem;
+  z-index: 2;
+  font-family: 'Fraunces', serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--tua);
+  opacity: .65;
+  pointer-events: none;
+}
+
+.produk .bd {
+  padding: 1.2rem;
+}
+
+.produk h5 {
+  font-family: 'Fraunces', serif;
+  font-weight: 800;
+  color: var(--tua);
+  margin: 0 0 .3rem;
+}
+
+.c1 .gb {
+  background: linear-gradient(135deg, #2e8b57, #7bc47f);
+}
+
+.c2 .gb {
+  background: linear-gradient(135deg, #ff8a3d, #ffb36b);
+}
+
+.c3 .gb {
+  background: linear-gradient(135deg, #3a86c8, #82c0ee);
+}
+
+.c4 .gb {
+  background: linear-gradient(135deg, #9b59b6, #cf9be0);
+}
+
+.c5 .gb {
+  background: linear-gradient(135deg, #d6a31f, #ffd166);
+}
+
+.produk.kosong {
+  background: transparent;
+  border: 3px dashed var(--hijau2);
+  box-shadow: none;
+}
+
+.produk.kosong .gb {
+  background: transparent;
+  color: var(--hijau2);
+}
+
+/* KONTAK DAN LOKASI */
+.kartu-kontak {
+  background: var(--tua);
+  color: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+  height: 100%;
+}
+
+.kartu-kontak .row-k {
+  display: flex;
+  gap: .9rem;
+  margin-bottom: 1.1rem;
+}
+
+.kartu-kontak .row-k i {
+  width: 42px;
+  height: 42px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--oranye);
+  display: grid;
+  place-items: center;
+}
+
+.kartu-kontak a {
+  color: var(--kuning);
+}
+
+.peta iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  border: 0;
+  border-radius: 2rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .18);
+}
+
+/* SOSIAL MEDIA */
+.sos {
+  background: linear-gradient(135deg, var(--oranye), #ff6b6b);
+  color: #fff;
+  border-radius: 2.5rem;
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.sos .ikon {
+  display: inline-grid;
+  place-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 1.4rem;
+  background: #fff;
+  font-size: 2rem;
+  margin: .4rem;
+  transition: .25s;
+  text-decoration: none;
+}
+
+.sos .ikon:hover {
+  transform: translateY(-8px) rotate(-6deg);
+}
+
+.ig { color: #e1306c; }
+.fb { color: #1877f2; }
+.li { color: #0a66c2; }
+.wa { color: #25d366; }
+.ml { color: var(--oranye); }
+
+footer {
+  background: var(--tua);
+  color: #cfe3d6;
+  padding: 2rem 0;
+  margin-top: 5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+  .tl::before {
+    left: 10px;
+  }
+
+  .tl .it,
+  .tl .it:nth-child(even) {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 0 2rem 2rem;
+    text-align: left;
+  }
+
+  .tl .it::after,
+  .tl .it:nth-child(even)::after {
+    left: 0;
+    right: auto;
+  }
+
+  .foto {
+    min-height: 260px;
+  }
+
+  .hero {
+    min-height: 90vh;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGASI -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="nav">
+  <div class="container">
+    <a class="navbar-brand" href="#beranda">Mensana<span>.</span></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#struktur">Struktur</a></li>
+        <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+        <li class="nav-item"><a class="nav-link" href="#lokasi">Lokasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sosmed">Sosial Media</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- BERANDA -->
+<header class="hero" id="beranda">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <span class="sub">Sejak 1986 · Kesehatan Hewan</span>
+        <h1>Ternak sehat,<br><span>peternak</span> sejahtera.</h1>
+        <p class="lead my-4">
+          PT Mensana Aneka Satwa adalah produsen, importir, eksportir, dan distributor produk kesehatan hewan: biologik, farmasetik, obat alami, dan premix.
+        </p>
+        <a href="#produk" class="btn btn-oranye me-2 mb-2">Lihat Produk <i class="bi bi-arrow-right"></i></a>
+        <a href="#tentang" class="btn btn-garis mb-2">Kenali Kami</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="chip a d-none d-lg-block">
+    <i class="bi bi-geo-alt-fill text-danger"></i> 34 Cabang
+    <small>di seluruh Indonesia</small>
+  </div>
+
+  <div class="chip b d-none d-lg-block">
+    <i class="bi bi-award-fill text-warning"></i> 40 Tahun
+    <small>melayani peternak</small>
+  </div>
+
+  <div class="gelombang">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+      <path fill="#143d27" d="M0 50 C240 100 480 0 720 40 C960 80 1200 10 1440 50 V90 H0Z"/>
+    </svg>
+  </div>
+</header>
+
+<!-- TEKS BERJALAN -->
+<div class="marquee">
+  <div>
+    <span>PREMIX<i>✦</i>VITAMIN<i>✦</i>VAKSIN<i>✦</i>HERBAL<i>✦</i>ANTIBIOTIK<i>✦</i>DESINFEKTAN<i>✦</i>PERALATAN PETERNAKAN<i>✦</i></span>
+    <span>PREMIX<i>✦</i>VITAMIN<i>✦</i>VAKSIN<i>✦</i>HERBAL<i>✦</i>ANTIBIOTIK<i>✦</i>DESINFEKTAN<i>✦</i>PERALATAN PETERNAKAN<i>✦</i></span>
+  </div>
+</div>
+
+<!-- TENTANG PERUSAHAAN -->
+<section class="blok" id="tentang">
+  <div class="container">
+
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5 rv">
+        <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\MENSANA-TOWER.png" class="img-fluid">
+      </div>
+
+      <div class="col-lg-7 rv">
+        <span class="sub">Tentang Kami</span>
+        <h2 class="judul mb-3">Hampir <em>4 dekade</em> menemani peternak Indonesia</h2>
+        <p>
+          PT Mensana Aneka Satwa berdiri sejak tahun 1986 dan bergerak di bidang kesehatan hewan sebagai produsen, importir, eksportir, dan distributor. Produk yang dihasilkan meliputi biologik, farmasetik, obat alami, dan premix, serta telah didistribusikan hampir ke seluruh wilayah Indonesia.
+        </p>
+        <p>
+          Pada tahun 2012 Mensana meresmikan anak perusahaan <strong>PT Sanbio Laboratories</strong> yang memproduksi produk biologik untuk unggas.
+        </p>
+
+        <div class="row g-3 mt-2">
+          <div class="col-6 col-md-3">
+            <div class="stat"><b data-to="1986">0</b><small>Tahun berdiri</small></div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat"><b data-to="34">0</b><small>Cabang</small></div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat"><b data-to="10">0</b><small>Kategori produk</small></div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat"><b data-to="4">0</b><small>Prinsip dasar</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-5">
+      <div class="col-md-6 rv">
+        <div class="vm v">
+          <i class="bi bi-eye bg"></i>
+          <h3 class="serif fw-bold"><i class="bi bi-eye me-2"></i>Visi</h3>
+          <p class="mb-0">
+            Menjadi perusahaan yang dominan dalam bidang nutrisi, kesehatan hewan dan peralatan peternakan di Indonesia dan memiliki eksistensi di pasar global dengan merek dagang yang kuat didasarkan oleh manajemen dan teknologi yang unggul.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 rv">
+        <div class="vm m">
+          <i class="bi bi-bullseye bg"></i>
+          <h3 class="serif fw-bold"><i class="bi bi-bullseye me-2"></i>Misi</h3>
+          <p class="mb-0">
+            Meningkatkan pelayanan untuk memenuhi permintaan akan kebutuhan nutrisi, obat hewan dan peralatan peternakan yang berkualitas.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5 rv">
+      <span class="sub">Nilai Perusahaan</span>
+      <h2 class="judul">Prinsip <em>Dasar</em></h2>
+    </div>
+
+    <div class="row g-4 mt-1">
+      <div class="col-6 col-lg-3 rv">
+        <div class="prinsip">
+          <div class="ik"><i class="bi bi-stars"></i></div>
+          <h5>Quality</h5>
+          <p class="small mb-0">Selalu mengupgrade diri.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3 rv">
+        <div class="prinsip">
+          <div class="ik"><i class="bi bi-shield-check"></i></div>
+          <h5>Responsibility</h5>
+          <p class="small mb-0">Bertanggung jawab atas pekerjaan.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3 rv">
+        <div class="prinsip">
+          <div class="ik"><i class="bi bi-hand-thumbs-up"></i></div>
+          <h5>Integrity</h5>
+          <p class="small mb-0">Kejujuran dalam bekerja.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3 rv">
+        <div class="prinsip">
+          <div class="ik"><i class="bi bi-heart"></i></div>
+          <h5>Sense of Belonging</h5>
+          <p class="small mb-0">Loyalitas tinggi terhadap perusahaan.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5 pt-3 rv">
+      <span class="sub">Perjalanan</span>
+      <h2 class="judul">Pencapaian <em>Kami</em></h2>
+    </div>
+
+    <div class="tl">
+      <div class="it rv">
+        <div class="th">1986</div>
+        <div class="isi">Awal berdiri. Pertama kali beralamat di Jalan Pangeran Jayakarta, Jakarta.</div>
+      </div>
+
+      <div class="it rv">
+        <div class="th">1989</div>
+        <div class="isi">Pindah kantor ke Jalan Daan Mogot, Jakarta Barat.</div>
+      </div>
+
+      <div class="it rv">
+        <div class="th">1991</div>
+        <div class="isi">Pabrik Cibitung, Bekasi, pabrik pertama tempat produksi obat hewan Mensana.</div>
+      </div>
+
+      <div class="it rv">
+        <div class="th">1992</div>
+        <div class="isi">Mulai mendirikan cabang untuk distribusi penjualan. Kini terdapat 34 cabang di Indonesia.</div>
+      </div>
+
+      <div class="it rv">
+        <div class="th">1999</div>
+        <div class="isi">Mendirikan pabrik peralatan peternakan di Tangerang.</div>
+      </div>
+
+      <div class="it rv">
+        <div class="th">2012</div>
+        <div class="isi">Meresmikan PT Sanbio Laboratories, memproduksi produk biologik unggas di Wanaherang, Gunung Putri, Bogor.</div>
+      </div>
+
+      <div class="it rv">
+        <div class="th">2015</div>
+        <div class="isi">Produksi premix dan obat hewan pindah ke Pabrik Wanaherang, Gunung Putri, Bogor.</div>
+      </div>
+
+      <div class="it rv">
+        <div class="th">2020</div>
+        <div class="isi">Kantor pusat pindah ke Mensana Tower, Cibubur, Kota Bekasi.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- STRUKTUR ORGANISASI -->
+<section class="blok bg-gelap" id="struktur">
+  <div class="gelombang" style="top:-1px;bottom:auto;transform:rotate(180deg)">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+      <path fill="#fff8ec" d="M0 50 C240 100 480 0 720 40 C960 80 1200 10 1440 50 V90 H0Z"/>
+    </svg>
+  </div>
+
+  <div class="container pt-4">
+    <div class="text-center mb-5 rv">
+      <span class="sub">Organisasi</span>
+      <h2 class="judul text-white">Struktur <em>Perusahaan</em></h2>
+    </div>
+
+    <div class="org rv">
+      <div class="nd top"><i class="bi bi-person-badge"></i>Direktur Utama</div>
+      <div class="gr"></div>
+      <div class="nd"><i class="bi bi-diagram-3"></i>Direktur Operasional</div>
+      <div class="gr"></div>
+
+      <div class="baris">
+        <div><div class="nd"><i class="bi bi-cart-check"></i>Manajer Procurement</div></div>
+        <div><div class="nd"><i class="bi bi-box-seam"></i>Manajer Warehouse</div></div>
+        <div><div class="nd"><i class="bi bi-patch-check"></i>Manajer Quality Control</div></div>
+        <div><div class="nd"><i class="bi bi-gear-wide-connected"></i>Manajer Produksi</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KATALOG PRODUK -->
+<section class="blok" id="produk">
+  <div class="container">
+    <div class="text-center mb-4 rv">
+      <span class="sub">Katalog</span>
+      <h2 class="judul">Produk <em>Unggulan</em></h2>
+    </div>
+
+    <div class="kat rv" role="tablist" aria-label="Pilih kategori produk">
+      <button type="button" class="active" role="tab" aria-selected="true" data-category="vaksin">Vaksin</button>
+      <button type="button" role="tab" aria-selected="false" data-category="vitamin">Vitamin</button>
+      <button type="button" role="tab" aria-selected="false" data-category="antibiotik">Antibiotik</button>
+      <button type="button" role="tab" aria-selected="false" data-category="anticoccidiosis">Anticoccidiosis</button>
+      <button type="button" role="tab" aria-selected="false" data-category="desinfektan">Desinfektan</button>
+      <button type="button" role="tab" aria-selected="false" data-category="premix">Premix</button>
+    </div>
+
+    <!-- KATEGORI VAKSIN -->
+    <div class="category-panel active" data-panel="vaksin" role="tabpanel">
+      <div class="text-center mt-5 mb-3 rv"><h3 class="judul">Vaksin</h3></div>
+      <div class="row g-4">
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c1">
+            <div class="gb">
+              <span class="no">01</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\SANAVAC-H120.png" alt="SANAVAC CLONE / H120" class="img-fluid">
+            </div>
+            <div class="bd">
+              <h5>SANAVAC CLONE / H120</h5>
+              <p class="small text-muted mb-0">Vaksin untuk penyakit Newcastle Disease dan Infectious Bronchitis pada unggas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c2">
+            <div class="gb">
+              <span class="no">02</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\SANAVAC-GUMBOMIX.png" alt="SANAVAC GUMBOMIX" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>SANAVAC GUMBOMIX</h5>
+              <p class="small text-muted mb-0">Vaksin untuk penyakit Infectious Bursal Disease pada unggas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c3">
+            <div class="gb">
+              <span class="no">03</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\SANAVAC-AI.png" alt="SANAVAC AI PLUS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>SANAVAC AI PLUS</h5>
+              <p class="small text-muted mb-0">Vaksin untuk penyakit Avian Influenza pada unggas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c4">
+            <div class="gb">
+              <span class="no">04</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\SANAVAC-ND.png" alt="SANAVAC ND K" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>SANAVAC ND K</h5>
+              <p class="small text-muted mb-0">Vaksin inaktif untuk penyakit Newcastle Disease pada unggas.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- KATEGORI VITAMIN -->
+    <div class="category-panel" data-panel="vitamin" role="tabpanel">
+      <div class="text-center mt-5 mb-3 rv"><h3 class="judul">Vitamin</h3></div>
+      <div class="row g-4">
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c1">
+            <div class="gb">
+              <span class="no">01</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\VIT-A.png" alt="VET-Vitamin A" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>VET-Vitamin A</h5>
+              <p class="small text-muted mb-0">Produk vitamin untuk membantu memenuhi kebutuhan vitamin A pada hewan.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c2">
+            <div class="gb">
+              <span class="no">02</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\VIT-MULTI.png" alt="VET VIT Multi" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>VET VIT Multi</h5>
+              <p class="small text-muted mb-0">Produk multivitamin untuk membantu memenuhi kebutuhan vitamin hewan.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c3">
+            <div class="gb">
+              <span class="no">03</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\VIT-CAL.png" alt="VET CAL" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>VET CAL</h5>
+              <p class="small text-muted mb-0">Produk suplemen kalsium untuk mendukung kebutuhan mineral hewan.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c4">
+            <div class="gb">
+              <span class="no">04</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\VIT-ZINC.png" alt="VET Zinc" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>VET Zinc</h5>
+              <p class="small text-muted mb-0">Produk suplemen zinc untuk membantu memenuhi kebutuhan mineral hewan.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- KATEGORI ANTIBIOTIK -->
+    <div class="category-panel" data-panel="antibiotik" role="tabpanel">
+      <div class="text-center mt-5 mb-3 rv"><h3 class="judul">Antibiotik</h3></div>
+      <div class="row g-4">
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c1">
+            <div class="gb">
+              <span class="no">01</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\BACITRAMAS.png" alt="BACITRAMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>BACITRAMAS</h5>
+              <p class="small text-muted mb-0">Antibakteri yang peka terhadap Bacitracin Methylene Disalicylate pada unggas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c2">
+            <div class="gb">
+              <span class="no">02</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\CIPROMAS.png" alt="CIPROMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>CIPROMAS</h5>
+              <p class="small text-muted mb-0">Produk antibiotik untuk sejumlah infeksi bakteri pada unggas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c3">
+            <div class="gb">
+              <span class="no">03</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\COLIMAS.png" alt="COLIMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>COLIMAS</h5>
+              <p class="small text-muted mb-0">Untuk penanganan colibacillosis dan infeksi bakteri tertentu pada unggas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c4">
+            <div class="gb">
+              <span class="no">04</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\FLOXAMAS.png" alt="FLOXAMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>FLOXAMAS</h5>
+              <p class="small text-muted mb-0">Produk antibiotik untuk sejumlah infeksi bakteri pada unggas.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- KATEGORI ANTICOCCIDIOSIS -->
+    <div class="category-panel" data-panel="anticoccidiosis" role="tabpanel">
+      <div class="text-center mt-5 mb-3 rv"><h3 class="judul">Anticoccidiosis &amp; Antiprotozoa</h3></div>
+      <div class="row g-4">
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c1">
+            <div class="gb">
+              <span class="no">01</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\COXY-STOP.png" alt="COXY - STOP" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>COXY - STOP</h5>
+              <p class="small text-muted mb-0">Antikoksidiosis yang bekerja pada berbagai tahap Eimeria sp.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c2">
+            <div class="gb">
+              <span class="no">02</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\COXYMAS.png" alt="COXYMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>COXYMAS</h5>
+              <p class="small text-muted mb-0">Untuk pengobatan coccidiosis yang disebabkan Eimeria spp pada unggas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c3">
+            <div class="gb">
+              <span class="no">03</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\LEUCOMAS.png" alt="LEUCOMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>LEUCOMAS</h5>
+              <p class="small text-muted mb-0">Untuk pengobatan penyakit Malaria Like (Leucocytozoonosis) pada unggas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c4">
+            <div class="gb">
+              <span class="no">04</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\QUINOXAN.png" alt="QUINOXAN" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>QUINOXAN</h5>
+              <p class="small text-muted mb-0">Untuk pencegahan dan pengobatan coccidiosis pada unggas.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- KATEGORI DESINFEKTAN -->
+    <div class="category-panel" data-panel="desinfektan" role="tabpanel">
+      <div class="text-center mt-5 mb-3 rv"><h3 class="judul">Desinfektan</h3></div>
+      <div class="row g-4">
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c1">
+            <div class="gb">
+              <span class="no">01</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\BIODES-100.png" alt="BIODES - 100" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>BIODES - 100</h5>
+              <p class="small text-muted mb-0">Desinfektan untuk kandang dan peralatan kesehatan hewan.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c2">
+            <div class="gb">
+              <span class="no">02</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\BIODES-FORTE.png" alt="BIODES FORTE" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>BIODES FORTE</h5>
+              <p class="small text-muted mb-0">Desinfektan larut air untuk membantu membunuh jasad renik penyebab penyakit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c3">
+            <div class="gb">
+              <span class="no">03</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\GLUTAMAS.png" alt="GLUTAMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>GLUTAMAS</h5>
+              <p class="small text-muted mb-0">Desinfektan efektif terhadap bakteri Gram positif dan negatif, virus, serta jamur.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c4">
+            <div class="gb">
+              <span class="no">04</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\MULTIDES.png" alt="MULTIDES" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>MULTIDES</h5>
+              <p class="small text-muted mb-0">Desinfektan untuk membantu membasmi virus, bakteri, jamur, protozoa, dan kuman penyebab penyakit pada hewan.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- KATEGORI PREMIX -->
+    <div class="category-panel" data-panel="premix" role="tabpanel">
+      <div class="text-center mt-5 mb-3 rv"><h3 class="judul">Premix</h3></div>
+      <div class="row g-4">
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c1">
+            <div class="gb">
+              <span class="no">01</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\MASAMIX.png" alt="MASAMIX" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>MASAMIX</h5>
+              <p class="small text-muted mb-0">Premix kombinasi multivitamin, asam amino, dan trace mineral.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c2">
+            <div class="gb">
+              <span class="no">02</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\MASAMIX-BRO.png" alt="MASAMIX BRO" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>MASAMIX BRO</h5>
+              <p class="small text-muted mb-0">Premix untuk membantu mencegah defisiensi vitamin dan mineral serta mendukung kualitas ransum.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c3">
+            <div class="gb">
+              <span class="no">03</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\MASAMIX-ZAS.png" alt="MASAMIX ZAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>MASAMIX ZAS</h5>
+              <p class="small text-muted mb-0">Produk premix dari lini produk Mensana.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 rv">
+          <div class="produk c4">
+            <div class="gb">
+              <span class="no">04</span>
+              <img src="C:\Users\ASUS\OneDrive\Dokumen\TUGAS KULIAH\SEMESTER 5\Praktikum APSI\startbootstrap-business-casual-gh-pages\assets\img\CYROMAS-1.png" alt="CYROMAS - 1%" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+            </div>
+            <div class="bd">
+              <h5>CYROMAS - 1%</h5>
+              <p class="small text-muted mb-0">Produk dari kategori premix pada katalog Mensana.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LOKASI -->
+<section class="blok pt-0" id="lokasi">
+  <div class="container">
+    <div class="text-center mb-5 rv">
+      <span class="sub">Temukan Kami</span>
+      <h2 class="judul">Kantor <em>Pusat</em></h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-5 rv">
+        <div class="kartu-kontak">
+          <div class="row-k">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <b>Mensana Tower Lt.18</b><br>
+              Jl. Raya Kranggan No.69, Jatisampurna, Cibubur, Kota Bekasi, Jawa Barat 17433
+            </div>
+          </div>
+
+          <div class="row-k">
+            <i class="bi bi-telephone-fill"></i>
+            <div>
+              <b>Telepon</b><br>
+              <a href="tel:12345678901">123-4567 8901</a>
+            </div>
+          </div>
+
+          <div class="row-k">
+            <i class="bi bi-envelope-fill"></i>
+            <div>
+              <b>Email</b><br>
+              <a href="mailto:@ptmensana.id">@ptmensana.id</a>
+            </div>
+          </div>
+
+          <div class="row-k">
+            <i class="bi bi-clock-fill"></i>
+            <div>
+              <b>Jam Kerja</b><br>
+              Senin – Jumat, 08.00 – 17.00
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7 peta rv">
+        <iframe
+          loading="lazy"
+          title="Peta Mensana Tower"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Mensana+Tower+Jl.+Raya+Kranggan+No.69+Jatisampurna+Bekasi&output=embed">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOSIAL MEDIA -->
+<section id="sosmed">
+  <div class="container">
+    <div class="sos rv">
+      <span class="sub">Terhubung</span>
+      <h2 class="judul text-white mb-2">Ikuti <em style="color:var(--kuning)">kabar</em> Mensana</h2>
+      <p class="mb-4">Dapatkan info produk, event, dan artikel terbaru.</p>
+
+      <a class="ikon ig" href="https://www.instagram.com/ptmensana.id/" target="_blank" rel="noopener" title="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
+
+      <a class="ikon fb" href="https://www.facebook.com/ptmensana.id/" target="_blank" rel="noopener" title="Facebook">
+        <i class="bi bi-facebook"></i>
+      </a>
+
+      <a class="ikon li" href="https://www.linkedin.com/company/pt-mensana-aneka-satwa/" target="_blank" rel="noopener" title="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </a>
+
+      <a class="ikon wa" href="https://wa.me/12345678901?text=Hallo%20Mensana" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+
+      <a class="ikon ml" href="mailto:@ptmensana.id" title="Email">
+        <i class="bi bi-envelope-fill"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center small">
+  <div class="container">
+    &copy; 2026 PT Mensana Aneka Satwa · Praktikum APSI Tugas Mingguan Acara VIII Q3
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+// FILTER KATEGORI PRODUK
+const categoryButtons = document.querySelectorAll('.kat [data-category]');
+const categoryPanels = document.querySelectorAll('.category-panel[data-panel]');
+
+categoryButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const selected = button.dataset.category;
+
+    categoryButtons.forEach(item => {
+      const active = item === button;
+      item.classList.toggle('active', active);
+      item.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+
+    categoryPanels.forEach(panel => {
+      const active = panel.dataset.panel === selected;
+      panel.classList.toggle('active', active);
+
+      if (active) {
+        panel.querySelectorAll('.rv').forEach(el => el.classList.add('on'));
+      }
+    });
+  });
+});
+
+// NAVBAR BERUBAH SAAT HALAMAN DIGULIR
+const nav = document.getElementById('nav');
+
+const cekNav = () => {
+  nav.classList.toggle('solid', window.scrollY > 60);
+};
+
+cekNav();
+window.addEventListener('scroll', cekNav);
+
+// ANIMASI MUNCUL DAN PENGHITUNG ANGKA
+function hitung(el) {
+  const to = Number(el.dataset.to);
+  const t0 = performance.now();
+
+  (function f(t) {
+    const p = Math.min((t - t0) / 1400, 1);
+    el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3)));
+
+    if (p < 1) {
+      requestAnimationFrame(f);
+    }
+  })(t0);
+}
+
+const io = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('on');
+      entry.target.querySelectorAll('[data-to]').forEach(hitung);
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: .15 });
+
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
