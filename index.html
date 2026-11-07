@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="PT Mensana Aneka Satwa - produsen dan distributor kesehatan hewan sejak 1986">
 <title>PT Mensana Aneka Satwa</title>
+
+<!-- LOGO WEBSITE (ikon di tab browser) -->
+<link rel="icon" type="image/png" href="assets/img/rlogo.png">
+
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
@@ -95,6 +99,21 @@ h1, h2, h3, .serif {
   color: var(--oranye);
 }
 
+/* LOGO PERUSAHAAN DI NAVBAR (latar putih agar logo tetap jelas di atas hero/navbar hijau) */
+.navbar-brand img {
+  display: block;
+  height: 44px;
+  width: auto;
+  background: #fff;
+  padding: 4px 10px;
+  border-radius: .7rem;
+  transition: .3s;
+}
+
+.navbar.solid .navbar-brand img {
+  height: 38px;
+}
+
 .nav-link {
   color: #fff !important;
   font-weight: 600;
@@ -157,6 +176,14 @@ h1, h2, h3, .serif {
   opacity: .92;
 }
 
+/* PARAGRAF RATA KIRI-KANAN (JUSTIFY): beranda & tentang */
+.hero p.lead,
+#tentang .col-lg-7 > p,
+#tentang .vm p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .btn-oranye {
   background: var(--oranye);
   color: #fff;
@@ -174,17 +201,22 @@ h1, h2, h3, .serif {
   box-shadow: 0 4px 0 #c9631b;
 }
 
+/* Tombol "Kenali Kami" disamakan dengan "Lihat Produk": sama-sama timbul (pop up) dan menekan saat di-hover */
 .btn-garis {
   border: 2px solid #fff;
   color: #fff;
   font-weight: 800;
   border-radius: 3rem;
-  padding: .8rem 2rem;
+  padding: calc(.9rem - 2px) 2rem;
+  box-shadow: 0 8px 0 rgba(255, 255, 255, .35);
+  transition: .15s;
 }
 
 .btn-garis:hover {
   background: #fff;
   color: var(--tua);
+  transform: translateY(4px);
+  box-shadow: 0 4px 0 rgba(255, 255, 255, .35);
 }
 
 .gelombang {
@@ -468,24 +500,49 @@ section.blok {
   border-radius: 4px;
 }
 
+/* GARIS PENGHUBUNG: garis datar hanya membentang dari tengah kotak pertama sampai tengah kotak terakhir (tidak kelebihan) */
 .org .baris {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1.2rem;
-  border-top: 4px solid var(--kuning);
-  margin: 0 4%;
+  margin: 0;
   padding-top: 0;
+}
+
+.org .baris > div {
+  position: relative;
+  padding-top: 30px;
 }
 
 .org .baris > div::before {
   content: "";
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
   width: 4px;
   height: 30px;
   background: var(--kuning);
-  margin: 0 auto;
+  transform: translateX(-50%);
   border-radius: 4px;
+}
+
+.org .baris > div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -.6rem;
+  right: -.6rem;
+  height: 4px;
+  background: var(--kuning);
+}
+
+.org .baris > div:first-child::after {
+  left: 50%;
+}
+
+.org .baris > div:last-child::after {
+  right: 50%;
 }
 
 /* KATALOG PRODUK */
@@ -740,6 +797,27 @@ footer {
     min-height: 90vh;
   }
 }
+
+/* STRUKTUR di layar sempit: kotak turun ke bawah, garis datar disembunyikan */
+@media (max-width: 991px) {
+  .org .baris {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .org .baris > div::after {
+    display: none;
+  }
+
+  .org .baris > div:not(:first-child) {
+    padding-top: 1rem;
+  }
+
+  .org .baris > div:not(:first-child)::before {
+    display: none;
+  }
+}
 </style>
 </head>
 
@@ -748,7 +826,9 @@ footer {
 <!-- NAVIGASI -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="nav">
   <div class="container">
-    <a class="navbar-brand" href="#beranda">Mensana<span>.</span></a>
+    <a class="navbar-brand" href="#beranda">
+      <img src="assets/img/rlogo.png" alt="Logo PT Mensana Aneka Satwa">
+    </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu">
       <span class="navbar-toggler-icon"></span>
@@ -1011,7 +1091,7 @@ footer {
           <div class="produk c1">
             <div class="gb">
               <span class="no">01</span>
-              <img src="assets\img\SANAVAC-H120.png" alt="SANAVAC CLONE / H120" class="img-fluid">
+              <img src="assets\img\rsanavach120.png" alt="SANAVAC CLONE / H120" class="img-fluid">
             </div>
             <div class="bd">
               <h5>SANAVAC CLONE / H120</h5>
@@ -1024,7 +1104,7 @@ footer {
           <div class="produk c2">
             <div class="gb">
               <span class="no">02</span>
-              <img src="assets\img\SANAVAC-GUMBOMIX.png" alt="SANAVAC GUMBOMIX" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rsanavacgumbomix.png" alt="SANAVAC GUMBOMIX" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>SANAVAC GUMBOMIX</h5>
@@ -1037,7 +1117,7 @@ footer {
           <div class="produk c3">
             <div class="gb">
               <span class="no">03</span>
-              <img src="assets\img\SANAVAC-AI.png" alt="SANAVAC AI PLUS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rsanavacaiplus.png" alt="SANAVAC AI PLUS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>SANAVAC AI PLUS</h5>
@@ -1050,7 +1130,7 @@ footer {
           <div class="produk c4">
             <div class="gb">
               <span class="no">04</span>
-              <img src="assets\img\SANAVAC-ND.png" alt="SANAVAC ND K" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rsanavacndk.png" alt="SANAVAC ND K" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>SANAVAC ND K</h5>
@@ -1071,7 +1151,7 @@ footer {
           <div class="produk c1">
             <div class="gb">
               <span class="no">01</span>
-              <img src="assets\img\VIT-A.png" alt="VET-Vitamin A" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rvitamina.png" alt="VET-Vitamin A" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>VET-Vitamin A</h5>
@@ -1084,7 +1164,7 @@ footer {
           <div class="produk c2">
             <div class="gb">
               <span class="no">02</span>
-              <img src="assets\img\VIT-MULTI.png" alt="VET VIT Multi" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rvitaminmulti.png" alt="VET VIT Multi" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>VET VIT Multi</h5>
@@ -1097,7 +1177,7 @@ footer {
           <div class="produk c3">
             <div class="gb">
               <span class="no">03</span>
-              <img src="assets\img\VIT-CAL.png" alt="VET CAL" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rvitamincal.png" alt="VET CAL" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>VET CAL</h5>
@@ -1110,7 +1190,7 @@ footer {
           <div class="produk c4">
             <div class="gb">
               <span class="no">04</span>
-              <img src="assets\img\VIT-ZINC.png" alt="VET Zinc" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rvitaminzinc.png" alt="VET Zinc" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>VET Zinc</h5>
@@ -1131,7 +1211,7 @@ footer {
           <div class="produk c1">
             <div class="gb">
               <span class="no">01</span>
-              <img src="assets\img\BACITRAMAS.png" alt="BACITRAMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rbacitramas.png" alt="BACITRAMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>BACITRAMAS</h5>
@@ -1144,7 +1224,7 @@ footer {
           <div class="produk c2">
             <div class="gb">
               <span class="no">02</span>
-              <img src="assets\img\CIPROMAS.png" alt="CIPROMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rcipromas.png" alt="CIPROMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>CIPROMAS</h5>
@@ -1157,7 +1237,7 @@ footer {
           <div class="produk c3">
             <div class="gb">
               <span class="no">03</span>
-              <img src="assets\img\COLIMAS.png" alt="COLIMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rcolimas.png" alt="COLIMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>COLIMAS</h5>
@@ -1170,7 +1250,7 @@ footer {
           <div class="produk c4">
             <div class="gb">
               <span class="no">04</span>
-              <img src="assets\img\FLOXAMAS.png" alt="FLOXAMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rfloxamas.png" alt="FLOXAMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>FLOXAMAS</h5>
@@ -1204,7 +1284,7 @@ footer {
           <div class="produk c2">
             <div class="gb">
               <span class="no">02</span>
-              <img src="assets\img\COXYMAS.png" alt="COXYMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rcoxymas.png" alt="COXYMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>COXYMAS</h5>
@@ -1217,7 +1297,7 @@ footer {
           <div class="produk c3">
             <div class="gb">
               <span class="no">03</span>
-              <img src="assets\img\LEUCOMAS.png" alt="LEUCOMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rleucomas.png" alt="LEUCOMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>LEUCOMAS</h5>
@@ -1230,7 +1310,7 @@ footer {
           <div class="produk c4">
             <div class="gb">
               <span class="no">04</span>
-              <img src="assets\img\QUINOXAN.png" alt="QUINOXAN" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rquinoxan.png" alt="QUINOXAN" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>QUINOXAN</h5>
@@ -1251,7 +1331,7 @@ footer {
           <div class="produk c1">
             <div class="gb">
               <span class="no">01</span>
-              <img src="assets\img\BIODES-100.png" alt="BIODES - 100" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rbiodes100.png" alt="BIODES - 100" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>BIODES - 100</h5>
@@ -1264,7 +1344,7 @@ footer {
           <div class="produk c2">
             <div class="gb">
               <span class="no">02</span>
-              <img src="assets\img\BIODES-FORTE.png" alt="BIODES FORTE" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rbiodesforte.png" alt="BIODES FORTE" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>BIODES FORTE</h5>
@@ -1277,7 +1357,7 @@ footer {
           <div class="produk c3">
             <div class="gb">
               <span class="no">03</span>
-              <img src="assets\img\GLUTAMAS.png" alt="GLUTAMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rglutamas.png" alt="GLUTAMAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>GLUTAMAS</h5>
@@ -1290,7 +1370,7 @@ footer {
           <div class="produk c4">
             <div class="gb">
               <span class="no">04</span>
-              <img src="assets\img\MULTIDES.png" alt="MULTIDES" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rmultides.png" alt="MULTIDES" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>MULTIDES</h5>
@@ -1311,7 +1391,7 @@ footer {
           <div class="produk c1">
             <div class="gb">
               <span class="no">01</span>
-              <img src="assets\img\MASAMIX.png" alt="MASAMIX" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rmasamix.png" alt="MASAMIX" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>MASAMIX</h5>
@@ -1324,7 +1404,7 @@ footer {
           <div class="produk c2">
             <div class="gb">
               <span class="no">02</span>
-              <img src="assets\img\MASAMIX-BRO.png" alt="MASAMIX BRO" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rmasamixbro.png" alt="MASAMIX BRO" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>MASAMIX BRO</h5>
@@ -1337,7 +1417,7 @@ footer {
           <div class="produk c3">
             <div class="gb">
               <span class="no">03</span>
-              <img src="assets\img\MASAMIX-ZAS.png" alt="MASAMIX ZAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rmasamixzas.png" alt="MASAMIX ZAS" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>MASAMIX ZAS</h5>
@@ -1350,7 +1430,7 @@ footer {
           <div class="produk c4">
             <div class="gb">
               <span class="no">04</span>
-              <img src="assets\img\CYROMAS-1.png" alt="CYROMAS - 1%" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
+              <img src="assets\img\rcyromas1.png" alt="CYROMAS - 1%" loading="lazy" onerror="this.onerror=null;this.src='img/placeholder.jpg';">
             </div>
             <div class="bd">
               <h5>CYROMAS - 1%</h5>
